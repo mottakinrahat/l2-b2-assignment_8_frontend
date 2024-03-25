@@ -1,0 +1,40 @@
+{
+  "banner": [
+    {
+      "id": 1,
+      "category": "Clothing Accessories",
+      "name": "Baby Hat",
+      "image": "https://i.ibb.co/h873Kv1/clothes.jpg"
+    },
+    {
+      "id": 2,
+      "category": "Feeding Accessories",
+      "name": "Baby Bottle",
+      "image": "https://i.ibb.co/FqR8YRD/feeding.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Bathing Accessories",
+      "name": "Baby Bottle",
+      "image": "https://i.ibb.co/fXVSFVB/bathing.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Toys and Entertainment Accessories",
+      "name": "Baby Bottle",
+      "image": "https://i.ibb.co/JCd7NNQ/toys.webp"
+    },
+    {
+      "id": 5,
+      "category": "Nursery Accessories",
+      "name": "Baby Bottle",
+      "image": "https://i.ibb.co/wRfkYH6/nursery.jpg"
+    },
+    {
+      "id": 6,
+      "category": "Sleeping Accessories",
+      "name": "Swaddle Blanket",
+      "image": "https://i.ibb.co/t43z8nL/sleeping.jpg"
+    }
+  ]
+}
