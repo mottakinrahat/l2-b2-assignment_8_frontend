@@ -7,7 +7,7 @@ interface productId {
   };
 }
 export const generateStaticParams = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products");
+  const res = await fetch("https://l2b2assgnment8.vercel.app/api/v1/products");
   const productData = await res.json();
   return productData.slice(0, 10).map((product: TProduct) => ({
     productId: product._id,
@@ -15,7 +15,7 @@ export const generateStaticParams = async () => {
 };
 const DetailsProducts = async ({ params }: productId) => {
   const res = await fetch(
-    `http://localhost:5000/api/v1/products/${params?.productId}`,
+    `https://l2b2assgnment8.vercel.app/api/v1/products/${params?.productId}`,
     {
       cache: "no-store",
     }

@@ -12,7 +12,7 @@ interface searchParams {
 const Products = async ({ searchParams }: searchParams) => {
   let productData = [];
 
-  let apiUrl = "http://localhost:5000/api/v1/products";
+  let apiUrl = "https://l2b2assgnment8.vercel.app/api/v1/products";
 
   const queryParams = [];
   if (searchParams.rating) queryParams.push(`rating=${searchParams.rating}`);

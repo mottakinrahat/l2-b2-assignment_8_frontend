@@ -4,9 +4,12 @@ import FlashSaleCard from "../../components/UI/Home/FlashSale/FlashSaleCard";
 import { TFlashSale } from "@/type/Type";
 
 const FlashSaleAll = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/flash-saleData", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    "https://l2b2assgnment8.vercel.app/api/v1/flash-saleData",
+    {
+      cache: "no-store",
+    }
+  );
   const flashSaleData = await res.json();
 
   return (

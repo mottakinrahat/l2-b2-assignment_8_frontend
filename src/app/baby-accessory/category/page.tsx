@@ -12,7 +12,7 @@ interface TSearchParams {
 const DetailsProducts = async ({ searchParams }: TSearchParams) => {
   const category = searchParams[""];
   const res = await fetch(
-    `http://localhost:5000/api/v1/flash-sales?category=${category}`,
+    `https://l2b2assgnment8.vercel.app/api/v1/flash-sales?category=${category}`,
     {
       cache: "no-store",
     }

@@ -6,11 +6,14 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const FlashSale = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/flash-saleData", {
-    next: {
-      revalidate: 30,
-    },
-  });
+  const res = await fetch(
+    "https://l2b2assgnment8.vercel.app/api/v1/flash-saleData",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const flashSaleData = await res.json();
 
   return (

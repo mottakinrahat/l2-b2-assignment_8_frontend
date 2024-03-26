@@ -5,11 +5,14 @@ import ProductCard from "./ProductCard";
 import { TProduct } from "@/type/Type";
 import Link from "next/link";
 const TopProduct = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/trending-product", {
-    next: {
-      revalidate: 30,
-    },
-  });
+  const res = await fetch(
+    "https://l2b2assgnment8.vercel.app/api/v1/trending-product",
+    {
+      next: {
+        revalidate: 30,
+      },
+    }
+  );
   const productData = await res.json();
   return (
     <Container sx={{ marginTop: "40px" }}>
