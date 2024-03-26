@@ -1,5 +1,9 @@
 import { Stack, Typography } from "@mui/material";
-import ProductCard from "../TopProduct/ProductCard";
+// import ProductCard from "../TopProduct/ProductCard";
+import dynamic from "next/dynamic";
+const ProductCard = dynamic(() => import("../TopProduct/ProductCard"), {
+  ssr: false,
+});
 import { TProduct } from "@/type/Type";
 import FormToFilter from "@/components/FormToFilter/FormToFilter";
 interface searchParams {

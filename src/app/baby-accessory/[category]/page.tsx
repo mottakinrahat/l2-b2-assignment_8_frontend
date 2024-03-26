@@ -1,6 +1,10 @@
-import ProductCard from "@/app/(withCommonLayout)/TopProduct/ProductCard";
-import FlashSaleCard from "@/app/components/UI/Home/FlashSale/FlashSaleCard";
-import { TFlashSale, TProduct } from "@/type/Type";
+// import ProductCard from "@/app/(withCommonLayout)/TopProduct/ProductCard";
+import dynamic from "next/dynamic";
+const ProductCard = dynamic(
+  () => import("@/app/(withCommonLayout)/TopProduct/ProductCard"),
+  { ssr: false }
+);
+import { TProduct } from "@/type/Type";
 import { Container, Stack } from "@mui/material";
 import React from "react";
 

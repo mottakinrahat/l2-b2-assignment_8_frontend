@@ -8,15 +8,13 @@ import Link from "next/link";
 const ProductCard = ({ productData }: { productData: TProduct }) => {
   const {
     _id,
-    category,
+
     rating,
     name,
     material,
     color,
-    size,
     flashSalePercent,
     price,
-    endTime,
     image,
     flashSale,
   } = productData;
@@ -28,8 +26,6 @@ const ProductCard = ({ productData }: { productData: TProduct }) => {
           alt="ss"
           height={700}
           width={300}
-          objectPosition="center"
-          objectFit="cover"
           className="border rounded-xl shadow-md "
         ></Image>
         <Stack>
