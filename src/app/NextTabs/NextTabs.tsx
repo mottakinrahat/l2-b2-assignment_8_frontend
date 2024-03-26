@@ -40,7 +40,7 @@ const textData = [
 const NextTabs = () => {
   const router = useRouter();
   const filteredProduct = (value: string) => {
-    router.push(`/baby-accessory/category?=${value}`);
+    router.push(`/baby-accessory?category=${value}`);
   };
   return (
     <div>
