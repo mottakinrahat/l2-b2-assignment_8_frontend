@@ -27,6 +27,7 @@ const DetailsProducts = async ({ searchParams }: TSearchParams) => {
     <Container className="my-20">
       <Stack
         direction="row"
+        flexWrap="wrap"
         justifyContent="center"
         alignItems="center"
         gap={6}
