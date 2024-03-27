@@ -16,8 +16,7 @@ const FlashSaleAll = async () => {
     <div>
       <Typography
         textAlign="center"
-        component="h2"
-        variant="h3"
+        fontSize={{ xs: "20px", sm: "25px", md: "30px" }}
         fontWeight={600}
       >
         Flash Sale Products

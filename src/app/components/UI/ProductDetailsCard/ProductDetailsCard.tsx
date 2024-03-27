@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Rating, Stack, Typography } from "@mui/material";
 import { ShoppingCart } from "lucide-react";
 import Image from "next/image";
 import { TProduct } from "@/type/Type";
@@ -59,8 +59,9 @@ const ProductDetailsCard = ({ singleProduct }: { singleProduct: TProduct }) => {
             <Typography fontWeight={200} className="flex items-center gap-2">
               category:<Box color="primary.main">{category}</Box>
             </Typography>
-            <Typography className="flex items-center gap-2" fontWeight={200}>
-              rating:<Box color="primary.main">{rating}</Box>
+            <Typography className="flex items-center gap-2">
+              <Rating name="read-only" value={rating} readOnly />
+              {rating}
             </Typography>
             {size && (
               <Typography className="flex items-center gap-2" fontWeight={200}>

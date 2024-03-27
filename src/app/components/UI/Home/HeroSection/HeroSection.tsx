@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import "./heroSection.css";
 import Image from "next/image";
 const accessories = [
   {
@@ -84,13 +85,19 @@ const HeroSection = () => {
           textAlign: "center",
         }}
       >
-        <Typography color="white" variant="h2" component="h2">
+        <Typography color="white" sx={{ fontSize: { xs: "40px", md: "60px" } }}>
           Step into the world of{" "}
           <Box fontWeight={800} display="block" color="yellow">
             BABYBUNDLES
           </Box>
         </Typography>
-        <Typography textAlign="center" color="white" maxWidth="800px" mt="20px">
+        <Typography
+          textAlign="center"
+          color="white"
+          maxWidth="800px"
+          mt="20px"
+          sx={{ fontSize: { xs: "14px", md: "18px" }, padding: { xs: "20px" } }}
+        >
           Discover the perfect companions for your little one! Explore our
           curated collection of premium baby accessories, designed to add
           comfort, style, and joy to every precious moment.Elevate your

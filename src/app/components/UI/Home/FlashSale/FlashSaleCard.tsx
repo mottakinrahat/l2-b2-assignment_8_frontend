@@ -2,7 +2,7 @@
 /** @jsxImportSource @emotion/react */
 import { keyframes } from "@emotion/react";
 import { TFlashSale } from "@/type/Type";
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Rating, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -18,9 +18,7 @@ const FlashSaleCard = ({ saleData }: { saleData: TFlashSale }) => {
     _id,
     category,
     name,
-    material,
-    color,
-    size,
+    rating,
     flashSalePercent,
     price,
     endTime,
@@ -91,9 +89,15 @@ const FlashSaleCard = ({ saleData }: { saleData: TFlashSale }) => {
             </Typography>
             <Typography>Category: {category}</Typography>
             <Typography className="flex items-center gap-2">
+              <Rating name="read-only" value={rating} readOnly />
+              {rating}
+            </Typography>
+            <Typography className="flex items-center gap-2">
               Price:
               <Box sx={{ textDecoration: "line-through" }}>${price}</Box>
-              <Box>${discountedPrice}</Box>
+              <Box color="primary.main" fontWeight={600}>
+                ${discountedPrice}
+              </Box>
             </Typography>
             <Stack
               direction="row"

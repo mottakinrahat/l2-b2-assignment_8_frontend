@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import { Box, Button, Rating, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import { TProduct } from "@/type/Type";
 import { ArrowRight } from "lucide-react";
@@ -59,7 +59,10 @@ const ProductCard = ({ productData }: { productData: TProduct }) => {
             </Typography>
             {material && <Typography>Material:{material}</Typography>}
             {color && <Typography>Color:{color}</Typography>}
-            <Typography>Rating:{rating}</Typography>
+            <Typography className="flex items-center gap-2">
+              <Rating name="read-only" value={rating} readOnly />
+              {rating}
+            </Typography>
             <Typography className="flex items-center gap-2">
               Price: <Box>${price}</Box>
             </Typography>

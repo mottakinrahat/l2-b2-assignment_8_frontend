@@ -17,7 +17,10 @@ const TopProduct = async () => {
   return (
     <Container sx={{ marginTop: "40px" }}>
       <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <Typography variant="h4" component="h4" fontWeight={600}>
+        <Typography
+          sx={{ fontSize: { xs: "20px", md: "35px" } }}
+          fontWeight={600}
+        >
           Top Products
         </Typography>
 

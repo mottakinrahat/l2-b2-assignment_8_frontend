@@ -19,7 +19,7 @@ const FlashSale = async () => {
   return (
     <Container sx={{ marginTop: "40px" }}>
       <Stack direction="row" justifyContent="space-between" alignItems="center">
-        <Typography variant="h3" component="h3" fontWeight={600}>
+        <Typography sx={{ fontSize: { xs: "16px", md: "30px" } }} fontWeight={600}>
           Flash Sale of Our Products
         </Typography>
 
